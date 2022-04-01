@@ -2,6 +2,11 @@
     font-family: 'BIZ UDPMincho', serif;
 }
 
+@font-face {
+    font-family: "Norse Bold";
+    src: url("Norse-Bold.otf")
+}
+
 body {
     margin: 0;
 }
@@ -16,7 +21,7 @@ body {
 .side {
     background-image: url(img/philipp-deus-nx9Qd5NlNSs-unsplash.jpg);
     background-size: cover;
-    width: max(45%, 700px);
+    width: max(65%, 700px);
     height: 100vh;
 }
 
@@ -37,6 +42,7 @@ form {
 
 .header-text {
     line-height: 1.5rem;
+    padding-right: max(5rem, 20%);
 }
 
 form {
@@ -84,4 +90,48 @@ button {
 
 a {
     color: #98772e
+}
+
+img {
+    height: 10rem;
+    width: auto;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13%;
+}
+
+.name {
+    color: white;
+    font-size: 8rem;
+    margin: 0;
+    font-family: "Norse Bold", serif;
+    position: relative;
+    top: 1rem;
+}
+
+.error {
+    content: "*Passwords do not match";
+    border-color: red;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: inset;
+    padding: 1px 2px;
+}
+
+.error-message {
+    margin: .2rem;
+    font-size: 0.75rem;
+    color: red;
+    opacity: 1;
+}
+
+input:focus {
+    border: blue;
+    box-shadow: .1rem .1rem .2rem grey;
+    padding: 1px 2px;
 }
