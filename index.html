@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--1. Info
+        2. Form header
+        3. First Name
+        4. Last Name
+        5. Email
+        6. Phone Number
+        7. Password 
+        8. Confirm Password
+        9. Create Account button
+        10. Log in button 
+        11. Side Background 
+        12. Side Banner
+    -->
+    <div class="container">
+        <div class="side"></div>
+        <div class="main">
+            <div class="main-header">
+                <p class="header-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <form id="sign-up">
+                <p>Let's do this!</p>
+
+                <!-- <div class="name"> -->
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                <!-- </div> -->
+
+                <!-- <div class="contact"> -->
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div>
+                        <label for="tel">Phone Number</label>
+                        <input type="tel" id="tel" name="tel" pla>
+                    </div>
+                <!-- </div> -->
+
+                <!-- <div class="password"> -->
+                    <div>
+                        <label for="pwd">Password</label>
+                        <input type="password" id="pwd" name="pwd">
+                    </div>
+
+                    <div>
+                        <label for="confirm-pwd">Confirm Password</label>
+                        <input type="password" id="confirm-pwd" name="confirm-pwd">
+                    </div>
+                <!-- </div> -->
+            </form>
+
+            <button form="signup">Create Account</button>
+
+            <div class="login">Already have an account? <a href="#">Log In</a></div>
+            
+        </div>
+    </div>
+</body>
+</html>
