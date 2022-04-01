@@ -127,7 +127,7 @@ img {
     margin: .2rem;
     font-size: 0.75rem;
     color: red;
-    opacity: 1;
+    visibility: hidden;
 }
 
 input:focus {

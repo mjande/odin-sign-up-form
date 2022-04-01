@@ -60,13 +60,13 @@
        
                     <div>
                         <label for="pwd">Password</label>
-                        <input type="password" id="pwd" name="pwd" class="error">
+                        <input type="password" id="pwd" name="pwd">
                         <p class="error-message">*Passwords do not match</p>
                     </div>
 
                     <div>
                         <label for="confirm-pwd">Confirm Password</label>
-                        <input type="password" id="confirm-pwd" name="confirm-pwd" class="error">
+                        <input type="password" id="confirm-pwd" name="confirm-pwd">
                     </div>
             </form>
 
@@ -76,5 +76,31 @@
             
         </div>
     </div>
+    <script>
+        let pwd = document.querySelector("#pwd");
+        let confirmPwd = document.querySelector("#confirm-pwd");
+        let errorMessage = document.querySelector('.error-message')
+        
+        function pwdCheck() {
+            if (pwd.value != confirmPwd.value) {
+                pwd.className = "error";
+                confirmPwd.className = 'error';
+                errorMessage.style.visibility = 'visible';
+            } else {
+                console.log('pwd check clear');
+                pwd.className = '';
+                confirmPwd.className = '';
+                errorMessage.style.visibility = 'hidden';
+            }
+        }
+
+        pwd.addEventListener('blur', () => {
+            pwdCheck();
+        })
+
+        confirmPwd.addEventListener('blur', () => {
+            pwdCheck();
+        })
+    </script>
 </body>
 </html>
